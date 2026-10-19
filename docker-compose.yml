@@ -1,0 +1,8 @@
+services:
+  notebook:
+    build: .
+    container_name: taxi-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
